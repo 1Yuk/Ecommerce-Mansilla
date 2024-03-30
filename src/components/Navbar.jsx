@@ -1,15 +1,17 @@
-import { CartWidget } from './CartWidget';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { CartWidget } from './CartWidget';
+import { NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg bg-dark">
 				<div className="container-fluid mx-5 my-0">
-					<a className="navbar-brand text-light" href="#">
+					<NavLink className="navbar-brand text-light" to="/">
 						Glambit
-					</a>
+					</NavLink>
 					<button
 						className="navbar-toggler bg-light"
 						type="button"
@@ -24,23 +26,32 @@ export const Navbar = () => {
 					<div className="collapse navbar-collapse" id="navbarText">
 						<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 							<li className="nav-item">
-								<a
+								<NavLink
 									className="nav-link text-light"
 									aria-current="page"
-									href="#"
+									to="/category/remeras"
+									as={NavLink}
 								>
 									Remeras
-								</a>
+								</NavLink>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link text-light" href="#">
+								<NavLink
+									className="nav-link text-light"
+									to="/category/pantalones"
+									as={NavLink}
+								>
 									Pantalones
-								</a>
+								</NavLink>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link text-light" href="#">
+								<NavLink
+									className="nav-link text-light"
+									to="/category/zapatillas"
+									as={NavLink}
+								>
 									Zapatillas
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 						<CartWidget />

@@ -3,3 +3,14 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+.w-card {
+	width: 18rem;
+}
+.por-ahora {
+	text-align: center;
+}
+.img-card {
+	height: 18rem;
+	object-fit: contain;
+}

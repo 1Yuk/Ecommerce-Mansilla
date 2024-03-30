@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": "EcoWave Tee",
+		"description": "La remera EcoWave Tee promueve un estilo sostenible con su algodón orgánico y tintes naturales. Su diseño inspirado en las olas del océano te invita a adoptar un estilo de vida eco-friendly.",
+		"category": "remeras",
+		"price": "10.99",
+		"pictureUrl": "https://www.digitalsport.com.ar/files/products/613b753769044-501907-500x500.jpg"
+	},
+	{
+		"id": 2,
+		"title": "ElasticMove",
+		"description": "ElasticMove: comodidad y estilo en cualquier ocasión. Confeccionado con tejidos de alta tecnología, este pantalón se adapta a cada movimiento sin perder su estilo, perfecto para el día a día o aventuras al aire libre, manteniéndote cómodo y con estilo en todo momento",
+		"category": "pantalones",
+		"price": "9.99",
+		"pictureUrl": "https://rusty.com.ar/cdn/shop/files/BIZZAR_3_afef10a8-3c0b-4168-a42f-58d41fa20360.jpg?v=1692800700"
+	},
+	{
+		"id": 3,
+		"title": "FlexEase",
+		"description": "FlexEase son zapatillas cómodas y elegantes, con una construcción ligera y transpirable que brinda amortiguación suave y protección contra impactos. Perfectas para el gimnasio o el día a día, ofrecen estilo y confort en cada paso.",
+		"category": "zapatillas",
+		"price": "8.99",
+		"pictureUrl": "https://acdn.mitiendanube.com/stores/868/037/products/9eb79231-f54a-4b92-b535-50a36fda83f11-4381d0d83c0e4c30c116516758448414-640-0.png"
+	}
+]
