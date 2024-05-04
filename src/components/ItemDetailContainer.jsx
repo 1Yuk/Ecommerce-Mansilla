@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-
 import { useParams } from 'react-router-dom';
-import data from '../data/products.json';
+import { getFirestore, getDoc, doc } from 'firebase/firestore';
+import { ItemDetail } from './ItemDetail';
 
 export const ItemDetailContainer = () => {
 	const [product, setProduct] = useState(null);
@@ -9,25 +9,15 @@ export const ItemDetailContainer = () => {
 	const { id } = useParams();
 
 	useEffect(() => {
-		const get = new Promise((resolve, reject) => {
-			setTimeout(() => resolve(data), 2000);
-		});
-		get.then((data) => {
-			const filter = data.find((p) => p.id === Number(id));
-			setProduct(filter);
+		const db = getFirestore();
+		const refDoc = doc(db, 'products', id);
+
+		getDoc(refDoc).then((snapshot) => {
+			setProduct({ id: snapshot.id, ...snapshot.data() });
 		});
 	}, [id]);
 
 	if (!product) return <div>loading</div>;
 
-	return (
-		<div>
-			<h1 className="por-ahora">{product.title}</h1>
-			<img
-				className="card-img-top img-card "
-				src={product.pictureUrl}
-				alt=""
-			/>
-		</div>
-	);
+	return <ItemDetail product={product} />;
 };

@@ -14,3 +14,20 @@
 	height: 18rem;
 	object-fit: contain;
 }
+
+.contentCenter {
+	height: 500px !important;
+	width: 70% !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.productStock {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.d-flex {
+	align-items: center !important;
+	justify-content: center !important;
+}
